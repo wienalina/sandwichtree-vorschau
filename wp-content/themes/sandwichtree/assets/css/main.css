@@ -242,7 +242,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--ink); outli
 .empty-state .search-form { margin-block: 24px; }
 
 .placeholder {
-	display: grid; place-items: center; aspect-ratio: 4 / 5; width: 100%;
+	display: grid; place-items: center; aspect-ratio: 3 / 4; width: 100%;
 	background: repeating-linear-gradient(135deg, #DEDCD8 0 14px, #D8D6D2 14px 28px);
 	color: var(--muted); font-size: var(--step--1);
 }
@@ -255,12 +255,12 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--ink); outli
 }
 .intro figure { margin: 0; }
 .intro__main { grid-column: 1 / span 6; grid-row: 1 / span 2; }
-.intro__main img, .intro__main .placeholder { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.intro__main img, .intro__main .placeholder { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
 .intro__text { grid-column: 7 / span 6; grid-row: 2; align-self: end; padding-top: 40px; }
 .intro__title { font-size: var(--step-4); line-height: 0.98; letter-spacing: -0.035em; margin-bottom: .45em; overflow-wrap: anywhere; }
 .intro__lead { max-width: 40ch; color: var(--muted); margin-bottom: 1.8em; }
 .intro__side { grid-column: 11 / span 2; grid-row: 1; align-self: start; }
-.intro__side img, .intro__side .placeholder { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.intro__side img, .intro__side .placeholder { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
 .intro__side figcaption { margin-top: 10px; color: var(--muted); max-width: 26ch; }
 
 @media (max-width: 860px) {
@@ -320,7 +320,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--ink); outli
 .fresh__item:nth-child(4n + 4) { margin-top: 128px; }
 .fresh__item a { display: block; text-decoration: none; }
 .fresh__label { display: block; margin-bottom: 8px; color: var(--muted); }
-.fresh__image { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.fresh__image { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; }
 .fresh__name { display: block; margin-top: 12px; font-size: 0.88rem; font-weight: 600; line-height: 1.25; letter-spacing: 0.01em; text-transform: uppercase; }
 .fresh__price { display: block; margin-top: 2px; font-size: 0.92rem; }
 .fresh__price del { color: var(--muted); margin-right: 6px; }
@@ -333,7 +333,7 @@ input:focus, select:focus, textarea:focus { outline: 2px solid var(--ink); outli
 
 /* Fragen-Kacheln */
 .tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); padding-bottom: clamp(56px, 8vw, 112px); }
-.tile { position: relative; display: flex; flex-direction: column; aspect-ratio: 4 / 5; padding: clamp(20px, 2.4vw, 36px); text-decoration: none; overflow: hidden; }
+.tile { position: relative; display: flex; flex-direction: column; aspect-ratio: 3 / 4; padding: clamp(20px, 2.4vw, 36px); text-decoration: none; overflow: hidden; }
 .tile--photo { padding: 0; }
 .tile--photo img, .tile--photo .placeholder { width: 100%; height: 100%; object-fit: cover; aspect-ratio: auto; }
 .tile__q { font-size: var(--step-2); font-weight: 500; line-height: 0.98; letter-spacing: -0.025em; text-transform: uppercase; max-width: 10ch; overflow-wrap: anywhere; }
@@ -398,7 +398,7 @@ ul.products li.product { width: auto; margin: 0; padding: 0; float: none; positi
 
 .product-card .woocommerce-LoopProduct-link { display: block; text-decoration: none; color: inherit; }
 .product-card__media { position: relative; background: var(--paper-3); }
-.product-card__media > img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; margin: 0 !important; }
+.product-card__media > img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; margin: 0 !important; }
 .product-card__alt { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .3s ease; }
 @media (hover: hover) { .product-card:hover .product-card__alt { opacity: 1; } }
 .product-card.outofstock .product-card__media > img { filter: grayscale(.85) opacity(.6); }
@@ -584,3 +584,7 @@ ul.products li.product { width: auto; margin: 0; padding: 0; float: none; positi
 @media (prefers-reduced-motion: reduce) {
 	*, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; scroll-behavior: auto !important; }
 }
+
+/* Teile ohne Preis */
+.price-tbd { font-family: var(--mono); font-size: var(--step--2); font-weight: 400; color: var(--muted); }
+.woocommerce div.product p.price .price-tbd { font-size: var(--step--1); }
