@@ -1,0 +1,7 @@
+/* Editor-Ansicht ähnlich wie im Frontend */
+@font-face { font-family: "Inter Tight"; font-weight: 100 900; src: url("../fonts/inter-tight-latin-wght-normal.woff2") format("woff2"); }
+
+body { font-family: "Inter Tight", "Helvetica Neue", Arial, sans-serif; font-size: 16.5px; line-height: 1.55; color: #0D0F12; background: #FFFFFF; }
+h1, h2, h3 { font-weight: 500; line-height: 1; letter-spacing: -0.025em; text-transform: uppercase; }
+a { color: #0D0F12; }
+.placeholder-note { padding: 14px 18px; border-left: 3px solid #7AA0B3; background: #F2F2F1; font-size: 15px; }
