@@ -34,6 +34,7 @@ Getestet mit WordPress 6.9 und WooCommerce 10.9, PHP 7.4 oder neuer.
 - **Design:** Weißer Hintergrund, helles Grau für Flächen, Akzente in Himmel-, Auto- und Meeresblau, Rot und Stein. Schrift: Inter Tight (Überschriften in Versalien) und IBM Plex Mono für kleine Bildunterschriften. Beide Schriften sind lokal eingebunden, also ohne Verbindung zu Google-Servern (DSGVO). Keine abgerundeten Ecken.
 - **Logo:** Ist im Theme enthalten (`assets/img/`). Ein eigenes Logo im Customizer ersetzt die Wortmarke im Kopfbereich. Die Logo-Dateien wurden aus einem Bild freigestellt. Liegt das Logo als Vektordatei (SVG/AI/PDF) vor, lässt es sich noch schärfer einbinden.
 - **Startseite:** Einstieg mit zwei Bildern, Kategorien als große Liste, Laufband, versetzte Reihe „Neu eingetroffen“ und Fragen-Kacheln. Texte und Bilder sind im Customizer änderbar. Ohne eigene Bilder zeigt die Startseite automatisch die neuesten Produktfotos.
+- **Über uns:** rundes Original-Logo groß auf beiger Fläche neben dem Text.
 
 ## Produkte anlegen: Tipps für Fotos
 

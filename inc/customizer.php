@@ -101,7 +101,7 @@ add_action( 'customize_register', function ( WP_Customize_Manager $wp_customize 
 		$wp_customize->add_setting( 'hero_image_' . $i, array( 'default' => 0, 'sanitize_callback' => 'absint' ) );
 		$wp_customize->add_control( new WP_Customize_Media_Control( $wp_customize, 'hero_image_' . $i, array(
 			'label'       => sprintf( __( 'Bild %d', 'sandwichtree' ), $i ),
-			'description' => 1 === $i ? __( 'Bild 1 groß links, Bild 2 klein rechts, Bild 3 in der Fragen-Kachel. Hochformat empfohlen (z. B. 1200 × 1500 px). Ohne eigene Bilder werden die neuesten Produktfotos verwendet.', 'sandwichtree' ) : '',
+			'description' => 1 === $i ? __( 'Bild 1 groß links, Bild 2 klein rechts, Bild 3 in der Fragen-Kachel. Hochformat 3:4 empfohlen. Ohne eigene Bilder werden die neuesten Produktfotos verwendet.', 'sandwichtree' ) : '',
 			'section'     => 'st_hero',
 			'mime_type'   => 'image',
 		) ) );

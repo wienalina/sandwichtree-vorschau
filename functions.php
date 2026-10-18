@@ -7,7 +7,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-define( 'SANDWICHTREE_VERSION', '1.5.0' );
+define( 'SANDWICHTREE_VERSION', '1.7.2' );
 define( 'SANDWICHTREE_DIR', get_template_directory() );
 define( 'SANDWICHTREE_URI', get_template_directory_uri() );
 
